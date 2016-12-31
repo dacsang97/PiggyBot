@@ -1,0 +1,71 @@
+* {
+    -fx-font-family: 'Roboto';
+    -fx-alignment: center;
+    -fx-text-fill: #fff;
+}
+
+#container {
+    -fx-background-color: #333745;
+    -fx-spacing: 20px;
+}
+
+.title {
+    -fx-font-size: 31px;
+    -fx-padding: 15px 15px 0px 15px;
+}
+
+.form {
+    -fx-background-color: #77C4D3;
+    -fx-padding: 15px;
+    -fx-spacing: 10px;
+}
+
+#loginform {
+    -fx-spacing: 10px;
+}
+
+.logged {
+    visibility: hidden;
+}
+
+#token {
+    -fx-pref-height: 90px;
+    -fx-text-fill: #4e4d4d;
+    -fx-prompt-text-fill: #5C5C5C;
+    -fx-border-color: #d0c8c6;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-highlight-fill: #d0c8c6;
+    -fx-font-size: 20px;
+}
+
+.button {
+    -fx-border-radius: 6px;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: #fff;
+    -fx-background-color: none;
+    -fx-text-fill: #fff;
+    -fx-fill-width: true;
+    -fx-cursor: hand;
+    -fx-padding: 7px;
+    -fx-font-size: 20px;
+}
+
+.button:hover {
+    -fx-background-color: #55C4D3;
+}
+
+#userinfo {
+    -fx-spacing: 10px;
+    -fx-font-size: 20px;
+}
+
+#namebox {
+    -fx-spacing: 10px;
+}
+
+#message {
+    -fx-text-fill: #4e4d4d;
+}

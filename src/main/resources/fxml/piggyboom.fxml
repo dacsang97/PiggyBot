@@ -1,0 +1,40 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox stylesheets="/css/main.css"
+      fx:controller="com.sangnd.piggyboom.controllers.Controller"
+      fx:id="container"
+      xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <VBox styleClass="title">
+            <Label text="Piggy Boom Bot" />
+        </VBox>
+        <VBox fx:id="form" styleClass="form">
+            <StackPane>
+                <VBox fx:id="loginform">
+                    <TextField fx:id="token" promptText="Nhập Token vào đây" />
+                    <Button text="Login" onAction="#handleLogin"/>
+                </VBox>
+                <HBox fx:id="userinfo" styleClass="logged">
+                    <ImageView fx:id="avatar">
+                        <Image url="/images/2.png" />
+                    </ImageView>
+                    <VBox fx:id="namebox">
+                        <Label fx:id="name"></Label>
+                        <Button text="Run Bot" onAction="#handleRun"/>
+                    </VBox>
+                </HBox>
+            </StackPane>
+            <TextArea fx:id="message" promptText="Bạn chưa đăng nhập" />
+        </VBox>
+    </children>
+</VBox>
